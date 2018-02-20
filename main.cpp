@@ -218,7 +218,7 @@ int main(){
     //mvprintw(20, 0, itemNumber.c_str());
     switch(atoi(itemNumber.c_str())){
      case 1:
-     exec("apt update | apt upgrade");
+     system("apt update | apt upgrade");
       //unpost_menu(myMenu);
       //free_menu(myMenu);
       for(int i = 0; i < numberChoices; ++i)
