@@ -29,7 +29,7 @@ std::string choices[] = { "  +---------------------------------------+",
                     "  +---------------------------------------+",
                     "09| Exit to Console                       |",
                     "  +                                       +",
-                    "01|                                       |",
+                    "01|  APT UPDATE UPGRADE                   |",
 					"02|                                       |",
 					"03|                                       |",
                     "07|                                       |",
@@ -218,8 +218,9 @@ int main(){
     //mvprintw(20, 0, itemNumber.c_str());
     switch(atoi(itemNumber.c_str())){
      case 1:
-      unpost_menu(myMenu);
-      free_menu(myMenu);
+     exec("apt update | apt upgrade");
+      //unpost_menu(myMenu);
+      //free_menu(myMenu);
       for(int i = 0; i < numberChoices; ++i)
        free_item(myItems[i]);
       endwin();
