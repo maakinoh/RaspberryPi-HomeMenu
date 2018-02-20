@@ -221,11 +221,11 @@ int main(){
      system("apt update | apt upgrade");
       //unpost_menu(myMenu);
       //free_menu(myMenu);
-      for(int i = 0; i < numberChoices; ++i)
-       free_item(myItems[i]);
-      endwin();
-      system("sshpass -p x ssh -o StrictHostKeyChecking=no ");
-      stop = true;
+      // for(int i = 0; i < numberChoices; ++i)
+      //  free_item(myItems[i]);
+      // endwin();
+      // system("sshpass -p x ssh -o StrictHostKeyChecking=no ");
+      // stop = true;
      break;
      case 2:
       unpost_menu(myMenu);
